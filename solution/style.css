@@ -1,0 +1,114 @@
+/* THE MAGIC FIX: This stops padding from blowing out the width */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2b00ff;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+
+    /* FLEXBOX CENTERING: Centers the card perfectly on the screen */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    background-color: #ff007f;
+    width: 350px;
+    padding: 40px;
+    border: 5px solid #ccff00;
+    border-radius: 15px;
+
+    /* FLEXBOX: Align everything inside the card in a column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- HEADER STYLES --- */
+.name-text {
+    font-size: 28px;
+    color: #00f5d4;
+    margin-bottom: 20px;
+}
+
+.img-wrapper img {
+    border-radius: 50%;
+    border: 5px dashed #ccff00;
+    margin-bottom: 10px;
+}
+
+.img-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #ffe066;
+}
+
+/* --- MAIN BODY STYLES --- */
+.sub-heading {
+    font-size: 20px;
+    color: #00f5d4;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.normal-text {
+    line-height: 1.5;
+}
+
+/* FLEXBOX: Makes the skills wrap nicely in a row instead of using inline-block hacks */
+.list-container {
+    list-style: none;
+    /* Removes the default bullet points */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.list-item {
+    background: #ccff00;
+    color: #2b00ff;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+/* --- FOOTER STYLES --- */
+.card-bottom {
+    margin-top: 40px;
+    background: #00f5d4;
+    padding: 20px;
+    width: 100%;
+    border: 4px solid #2b00ff;
+}
+
+/* FLEXBOX: Puts the buttons side-by-side with nice spacing */
+.links-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-btn {
+    background: #2b00ff;
+    color: #00f5d4;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    /* Removes the underline from the <a> tag */
+}
+
+/* Added a quick hover effect just to make it pop */
+.link-btn:hover {
+    background: #ffffff;
+    color: #2b00ff;
+}

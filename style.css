@@ -5,7 +5,7 @@
 
 body {
     /* Aggressive Deep Purple Background */
-    background-color: #2b00ff;
+    background-color: #ffa9d7;
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
 
@@ -16,7 +16,7 @@ body {
 
 .card-container {
     /* Hot Pink Card */
-    background-color: #ff007f;
+    background-color: #4ecbdc;
     width: 320px;
     /* This padding is blowing out the 320px width completely */
     padding: 80px;
@@ -32,20 +32,17 @@ body {
     font-size: 28px;
     font-weight: bold;
     /* Neon Cyan Text */
-    color: #00f5d4;
+    color: #98146a;
     /* Overlapping text disaster */
     margin-bottom: -15px;
 }
 
-.img-wrapper {
-    /* Pulling the image way off to the left side */
-    margin-left: -60px;
-    margin-top: 40px;
-}
+
 
 .img-wrapper img {
     border-radius: 50%;
     border: 5px dashed #ccff00;
+    margin-bottom: 10px;
 }
 
 .img-text {
@@ -66,12 +63,12 @@ body {
 
 .list-container {
     /* Pushing the list out of alignment */
-    margin-left: 30px;
+    align-items: center;
 }
 
 .list-item {
     /* A terrible way to mimic a flex row */
-    display: inline-block;
+    display: flex;
     background: #ccff00;
     color: #2b00ff;
     font-weight: bold;
@@ -80,14 +77,10 @@ body {
 }
 
 .card-bottom {
-    margin-top: 50px;
+    margin-top: 40px;
     background: #00f5d4;
     padding: 20px;
-    /* Intentionally breaking out of the parent container */
-    width: 500px;
-    /* Trying to fix the width break with negative margins */
-    margin-left: -100px;
-    text-align: center;
+    width: 100%;
     border: 4px solid #2b00ff;
 }
 

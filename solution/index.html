@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursed Profile Card Fixed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Changed to an <article> because it's a self-contained piece of content -->
+    <article class="card-container">
+
+        <!-- 2. Changed to a <header> -->
+        <header class="card-top">
+            <!-- 3. Changed to an <h1> -->
+            <h1 class="name-text">Alex Coder</h1>
+
+            <!-- 4. Changed to a <figure> and <figcaption> -->
+            <figure class="img-wrapper">
+                <img src="https://ui-avatars.com/api/?name=AC&size=150&background=random" alt="Profile Picture">
+                <figcaption class="img-text">Code Breaker</figcaption>
+            </figure>
+        </header>
+
+        <!-- 5. Changed to a <main> container -->
+        <main class="card-body">
+
+            <!-- 6. Changed to <section> blocks with <h2> headings and <p> tags -->
+            <section class="about-section">
+                <h2 class="sub-heading">About Me</h2>
+                <p class="normal-text">I love building things, but looking at this div soup makes my eyes bleed.</p>
+            </section>
+
+            <section class="skills-section">
+                <h2 class="sub-heading">My Skills</h2>
+                <!-- 7. Changed to an unordered list <ul> and list items <li> -->
+                <ul class="list-container">
+                    <li class="list-item">Frontend</li>
+                    <li class="list-item">Backend</li>
+                    <li class="list-item">Div Soup (Expert)</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- 8. Changed to a <footer> containing a <nav> for links -->
+        <footer class="card-bottom">
+            <nav class="links-area">
+                <!-- 9. Changed fake divs to actual anchor <a> tags -->
+                <a class="link-btn" href="https://github.com">GitHub</a>
+                <a class="link-btn" href="https://linkedin.com">LinkedIn</a>
+            </nav>
+        </footer>
+
+    </article>
+
+</body>
+
+</html>
