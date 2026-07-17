@@ -1,0 +1,106 @@
+/* 
+   WARNING: The developer forgot the most important CSS reset rule! 
+   (Hint: box-sizing) 
+*/
+
+body {
+    /* Aggressive Deep Purple Background */
+    background-color: #2b00ff;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+
+    /* Absolute disaster trying to center the card on the screen */
+    margin-top: 150px;
+    margin-left: 20%;
+}
+
+.card-container {
+    /* Hot Pink Card */
+    background-color: #ff007f;
+    width: 320px;
+    /* This padding is blowing out the 320px width completely */
+    padding: 80px;
+    /* Neon Green Border */
+    border: 5px solid #ccff00;
+    border-radius: 15px;
+
+    /* Why is this floating? Because they didn't know Flexbox. */
+    float: left;
+}
+
+.name-text {
+    font-size: 28px;
+    font-weight: bold;
+    /* Neon Cyan Text */
+    color: #00f5d4;
+    /* Overlapping text disaster */
+    margin-bottom: -15px;
+}
+
+.img-wrapper {
+    /* Pulling the image way off to the left side */
+    margin-left: -60px;
+    margin-top: 40px;
+}
+
+.img-wrapper img {
+    border-radius: 50%;
+    border: 5px dashed #ccff00;
+}
+
+.img-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #ffe066;
+    /* Shoving the text awkwardly to the right */
+    margin-left: 90px;
+}
+
+.sub-heading {
+    font-size: 20px;
+    color: #00f5d4;
+    margin-top: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.list-container {
+    /* Pushing the list out of alignment */
+    margin-left: 30px;
+}
+
+.list-item {
+    /* A terrible way to mimic a flex row */
+    display: inline-block;
+    background: #ccff00;
+    color: #2b00ff;
+    font-weight: bold;
+    margin: 5px;
+    padding: 8px 12px;
+}
+
+.card-bottom {
+    margin-top: 50px;
+    background: #00f5d4;
+    padding: 20px;
+    /* Intentionally breaking out of the parent container */
+    width: 500px;
+    /* Trying to fix the width break with negative margins */
+    margin-left: -100px;
+    text-align: center;
+    border: 4px solid #2b00ff;
+}
+
+.link-btn {
+    background: #2b00ff;
+    color: #00f5d4;
+    padding: 10px 20px;
+    border-radius: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /* Wait, why aren't these buttons sitting side-by-side? */
+    display: block;
+    margin-bottom: 15px;
+}
